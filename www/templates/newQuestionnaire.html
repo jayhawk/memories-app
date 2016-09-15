@@ -1,0 +1,26 @@
+<ion-view view-title="New Questionnaire">
+  <ion-content>
+    <form ng-submit="submitNew()">
+      <h1>New Questionnaire</h1>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Title</span>
+          <input type="text" placeholder="Your questionnaire title" ng-model="questionnaire.title">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Description</span>
+          <input type="text" placeholder="A brief description about it" ng-model="questionnaire.description">
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">Type</div>
+          <select>
+            <option value="yay-pay-par">Yay Pay Par</option>
+          </select>
+        </label>
+      </div>
+      <button class="button button-block button-balanced">
+        Submit
+      </button>
+    </form>
+  </ion-content>
+</ion-view>

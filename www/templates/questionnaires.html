@@ -1,0 +1,22 @@
+<ion-view view-title="Questionnaires">
+  <ion-content>
+    <ion-list>
+      <div class="list card">
+        <ion-item ng-repeat="questionnaire in questionnaires">
+          <div class="item">
+            <h2>{{questionnaire.title}}</h2>
+          </div>
+          <div class="item item-body">
+            <p>
+              {{questionnaire.description}}
+            </p>
+            <p>
+              <a href="#/app/questionnaires/{{questionnaire.id}}/edit" class="subdued">Edit</a>
+              <a href="#/app/questionnaires/{{questionnaire.id}}" class="subdued">Answer</a>
+            </p>
+          </div>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
